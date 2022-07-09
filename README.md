@@ -46,6 +46,10 @@
 - RUN npm install : node 종속성 설치
 - EXPORT : 도커 내부의 포트 열기 ex) EXPORT 80
 - CMD ["node","server.js"] : RUN과 CMD 차이는 CMD는 이미지 기반으로 컨테이너가 시작될때만 실행되는코드
+- docker build [dockerfile 경로] : dockerfile을 기본으로 새 커스텀 이미지를 빌드해라
+- docker run -p : -p [액세스 하려는 로컬 포트]:[내부 도커 컨테이너 포트]
+## ![image](https://user-images.githubusercontent.com/54635552/178098029-6f89137f-32d5-4352-a2ce-3f584296913e.png)
+- docker ps : 현재 실행중인 docker process 표시
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
 
