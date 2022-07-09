@@ -8,3 +8,7 @@
 
 ### Virtual Machine 장단점
 ## ![image](https://user-images.githubusercontent.com/54635552/178085094-80e1a7fc-dc8b-450a-a6dd-3e666ffd504c.png) 
+
+### 도커 구조
+## ![image](https://user-images.githubusercontent.com/54635552/178085210-66219e33-a421-481a-973b-652ab849fa76.png)
+
