@@ -27,7 +27,16 @@
 - 해당 adoring_blackwell 부분이 이름
 - 5.docker stop [이름] : 실행중인 도커 종료
 
-
+### 도커에서 node 실행
+- docker hub에서 image 가져와서 설치하기
+- docker run node : 로컬에 node image없어서 docker hub에서 설치받아서 실행
+## ![image](https://user-images.githubusercontent.com/54635552/178096453-393994a8-7018-4f10-b28b-a2e84aa53dfa.png)
+- docker ps -a : 도커가 생성한 모든 프로세스 확인
+## ![image](https://user-images.githubusercontent.com/54635552/178096546-ac3ac063-d951-4edd-92fd-4092eef9fe19.png)
+- docker run -it node : Container안에 있는 node 명령어 shell 바깥으로 나오게하기
+- 현재 컨테이너 내부에서 node가 실행중이고, 해당 명령어 shell을 바깥으로 나오게하여 상호작용하게함
+- node는 local 컴퓨터에서 작동되고있는것이아니라, 컨테이너 내부에서 실행중
+- 이미지 는 설정파일, 코드를 저장하고있고, 해당 이미지 기반으로 run을하면 Container가 생성됨 
 
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
