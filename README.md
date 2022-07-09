@@ -12,3 +12,7 @@
 ### 도커 구조
 ## ![image](https://user-images.githubusercontent.com/54635552/178085210-66219e33-a421-481a-973b-652ab849fa76.png)
 
+### 도커 Vs Virtual Machine
+## ![image](https://user-images.githubusercontent.com/54635552/178085337-270f8954-e597-40ed-bd8b-740d00064970.png)
+
+
