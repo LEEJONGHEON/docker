@@ -50,6 +50,16 @@
 - docker run -p : -p [액세스 하려는 로컬 포트]:[내부 도커 컨테이너 포트]
 ## ![image](https://user-images.githubusercontent.com/54635552/178098029-6f89137f-32d5-4352-a2ce-3f584296913e.png)
 - docker ps : 현재 실행중인 docker process 표시
+
+# 도커의 이미지와 컨테이너 개념
+- Image는 읽기전용으로 과거시점에 docker build . 을 했을경우 그 시점기준 코드로 Image build됨
+- 실시간 local환경의 code 변경이 image에 갱신되지않음
+- 이미지를 새롭게 build 해야지 해당 내용이 갱신됨
+- Docker에는 캐쉬개념이있어서 변경사항없이 동일 내용으로 build을 할시에 cache를 이용하여 빠르게 build됨
+- 이러한것은 레이어 기반 아키텍처를 사용하고있음
+- 코드를 변경하여 다시 build하면 캐시의 일부 결과만을 사용하므로 속도가 비교적느려짐
+- docker는 레이어 구조이므로 dockerfile의 순서를 바꾸어서 최적화를 시킬수 있음, 파일만 바꾸고 패키지 종속성이 변경되지않을 경우
+- dockerfile의 RUN npm install 순서를 바꾸어서 더 빠르게 build 하는 최적화를 가능하게함
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
 
