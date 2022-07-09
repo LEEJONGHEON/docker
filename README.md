@@ -38,6 +38,14 @@
 - node는 local 컴퓨터에서 작동되고있는것이아니라, 컨테이너 내부에서 실행중
 - 이미지 는 설정파일, 코드를 저장하고있고, 해당 이미지 기반으로 run을하면 Container가 생성됨 
 
+### Custom Dockerfile 생성
+## ![image](https://user-images.githubusercontent.com/54635552/178097565-c313590d-6469-4e5c-a7f2-eabbe97c19b8.png)
+- FROM : 특정 이미지 이름 or docker hub 상 이미지 이름 기반에서 이미지 작성하게 ex)FROM node
+- WORKDIR : 작업디렉토리 지정, 도커 내부에서 해당 작업디렉토리에서 작업하게 설정
+- COPY : COPY [컨테이너 외부 경로] [이미지가 복사되어야 할 위치] ex) COPY . /app : 현재폴더의 모든파일 도커의 /app 경로로 이동
+- RUN npm install : node 종속성 설치
+- EXPORT : 도커 내부의 포트 열기 ex) EXPORT 80
+- CMD ["node","server.js"] : RUN과 CMD 차이는 CMD는 이미지 기반으로 컨테이너가 시작될때만 실행되는코드
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
 
