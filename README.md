@@ -77,6 +77,7 @@
 - docker start -a : 수신 전용 모드로 실행
 - docker -a -i : 수신, 입력 둘다하는 모드로 실행
 
+# docker 컨테이너와 이미지 삭제
 
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
