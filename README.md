@@ -71,6 +71,12 @@
 - docker run : attached모드 포그라운드 실행, 컨테이너의 출력결과를 출력함
 - docker run -d : deattached모드로 실행
 - docker container attach [콘테이너 이름] : 다시 attached 모드로 변경
+- docker logs [컨테이너 이름] : 출력된 과거의 로그 확인 가능
+- docker logs -f [컨테이너 이름] : 로그 수신창으로 접속
+- docker run -it : Stdin 표준입력을 할수있는 터미널 생성 
+- docker start -a : 수신 전용 모드로 실행
+- docker -a -i : 수신, 입력 둘다하는 모드로 실행
+
 
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
