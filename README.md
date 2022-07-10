@@ -64,6 +64,13 @@
 # docker run과 start
 - docker --help : 도커 명령어 나옴
 - docker run : 이미지 기반으로 새로운 컨테이너 만들고 실행하기, 이미지가 변경되지않을경우 새 컨테이너를 안만들고 기존 컨테이너를 실행시키면됨
+- docker start [도커 이름 or 컨테이너 ID] : 해당 컨테이너 실행(새롭게 컨테이너 만들지않고 컨테이너 실행)
+
+# attached와 deattached 모드
+- docker start : deattached모드 백그라운드 실행 
+- docker run : attached모드 포그라운드 실행, 컨테이너의 출력결과를 출력함
+- docker run -d : deattached모드로 실행
+- docker container attach [콘테이너 이름] : 다시 attached 모드로 변경
 
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
