@@ -78,7 +78,10 @@
 - docker -a -i : 수신, 입력 둘다하는 모드로 실행
 
 # docker 컨테이너와 이미지 삭제
-
+- docker rm [컨테이너 이름] : 해당 컨테이너 삭제(실행중인 컨테이너를 삭제불가능)
+- docker images : 현재 로컬의 도커 이미지 리스트를 출력
+- docker rmi [이미지 ID] : 도커 image 삭제, 해당 image로 존재하는 container가 없어야만 삭제가능
+- docker run --rm : 해당 컨테이너가 종료될때 자동으로 컨테이너 삭제되게하기
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
 
