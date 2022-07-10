@@ -60,6 +60,10 @@
 - 코드를 변경하여 다시 build하면 캐시의 일부 결과만을 사용하므로 속도가 비교적느려짐
 - docker는 레이어 구조이므로 dockerfile의 순서를 바꾸어서 최적화를 시킬수 있음, 파일만 바꾸고 패키지 종속성이 변경되지않을 경우
 - dockerfile의 RUN npm install 순서를 바꾸어서 더 빠르게 build 하는 최적화를 가능하게함
+
+# docker run과 start
+- docker --help : 도커 명령어 나옴
+
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
 
