@@ -63,6 +63,7 @@
 
 # docker run과 start
 - docker --help : 도커 명령어 나옴
+- docker run : 이미지 기반으로 새로운 컨테이너 만들고 실행하기, 이미지가 변경되지않을경우 새 컨테이너를 안만들고 기존 컨테이너를 실행시키면됨
 
 #### 출처 : Docker & Kubernetes: 실전 가이드(Udemy)
 
